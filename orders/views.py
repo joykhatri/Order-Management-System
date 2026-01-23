@@ -122,8 +122,8 @@ class OrderViewSet(viewsets.ModelViewSet):
                         "data": serializer.data}, status=status.HTTP_200_OK)
     
 
-    def patch(self, request, *args, **kwargs):
-        order = get_object_or_404(Order, id=kwargs['pk'])
+    def partial_update(self, request, *args, **kwargs):
+        order = self.get_object()
 
         new_status = request.data.get('status')
 
@@ -165,3 +165,6 @@ class OrderViewSet(viewsets.ModelViewSet):
             "message": "Order updated successfully",
             "data": serializer.data
         }, status=status.HTTP_200_OK)
+
+    def perform_update(self, serializer):
+        serializer.instance.save()
