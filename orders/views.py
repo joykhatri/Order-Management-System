@@ -4,7 +4,6 @@ from customers.models import Customer
 from products.models import Product
 from .serializers import OrderSerializer
 from rest_framework.response import Response
-from django.shortcuts import get_object_or_404
 from django.db import transaction
 
 class OrderViewSet(viewsets.ModelViewSet):
@@ -168,3 +167,4 @@ class OrderViewSet(viewsets.ModelViewSet):
 
     def perform_update(self, serializer):
         serializer.instance.save()
+
