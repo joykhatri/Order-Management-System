@@ -5,7 +5,7 @@ install django, django rest framework & MySQL.
 -> pip install django djangorestframework
 -> pip install mysqlclient
 -> django-admin startproject project .
--> django-admin startapp customer
+-> django-admin startapp customers
 -> django-admin startapp orders
 -> django-admin startapp products
 
