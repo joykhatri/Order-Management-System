@@ -1,6 +1,15 @@
 # Order-Management-System
 Develop a REST API using Django Rest Framework (DRF) and MySQL that manages users, products, and orders with proper relationships and data fetching using joins / nested serializers.
 
+Create virtual environment.
+-> python -m venv .venv
+
+Activate virtual environment.
+-> .venv\Scripts\activate
+
+for server run.
+-> python manage.py runserver
+
 install django, django rest framework & MySQL.
 -> pip install django djangorestframework
 -> pip install mysqlclient
