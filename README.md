@@ -5,7 +5,7 @@ Develop a **REST API** using **Django Rest Framework (DRF)** and **MySQL** that 
 
 ### 1. Create and activate a virtual environment
 ```bash
--> python -m venv .venv
+python -m venv .venv
 ```
 
 ### 2. Activate virtual environment.
